@@ -1,5 +1,5 @@
 // import { randomIntFromRange, randomColor, distance } from './utils/utils.js';
-// import { color1 } from './utils/colorArrays.js';
+// import { color3 } from './utils/colorArrays.js';
 
 const canvas = document.querySelector('canvas');
 const c = canvas.getContext('2d');
@@ -30,20 +30,21 @@ class Circle {
         this.y = y;
         this.radius = radius;
         this.color = color;
-    }
 
-    draw() {
-        c.beginPath();
-        c.arc(this.x, this.y, this.radius, 0, Math.PI * 2, false);
-        c.fillStyle = this.color;
-        c.fill();
-        c.closePath();
-    }
 
-    update() {
-        //Start here
+        this.draw = () => {
+            c.beginPath();
+            c.arc(this.x, this.y, this.radius, 0, Math.PI * 2, false);
+            c.fillStyle = this.color;
+            c.fill();
+            c.closePath();
+        }
 
-        this.draw();
+        this.update = () => {
+            //Start here
+
+            this.draw();
+        }
     }
 }
 

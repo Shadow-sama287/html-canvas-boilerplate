@@ -1,3 +1,4 @@
+// the Pink Floydd
 export const color1 = [
     '#fe5d9f',
     '#f686bd',
@@ -62,4 +63,19 @@ export const color7 = [
     '#e9ff70'
 ];
 
+//the RGB
+export const color8 = [
+    '#ff0000',
+    '#00ff00',
+    '#0000ff'
+]
 
+// the Rainbow
+export const color9 = [
+    '#F60000',
+    '#FF8C00',
+    '#FFEE00',
+    '#4DE94C',
+    '#3783FF',
+    '#4815AA'
+]
